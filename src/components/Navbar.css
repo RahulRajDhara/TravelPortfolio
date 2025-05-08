@@ -1,0 +1,84 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.navbar {
+  background-color: #1a1a1a !important;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  font-family: 'Poppins', sans-serif;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  color: #00bcd4 !important;
+  font-weight: 600;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.navbar-brand i {
+  color: #00bcd4;
+}
+
+.navbar-nav .nav-link {
+  color: #ddd !important;
+  margin-right: 1rem;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00bcd4 !important;
+  transform: translateY(-2px);
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  border: 1px solid #888;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2888, 88, 88, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.form-control {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  font-size: 0.95rem;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.btn-outline-success {
+  border-color: #00bcd4;
+  color: #00bcd4;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #00bcd4;
+  color: #111;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    background-color: #1a1a1a;
+    padding: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+}
